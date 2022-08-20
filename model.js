@@ -7,7 +7,8 @@ const urlSchema = new mongoose.Schema({
     },
     shortUrl:
     {
-        type: Number
+        type: Number,
+        unique:true
     }
 })
 const shortUrl = new mongoose.model("URLShortener", urlSchema);
